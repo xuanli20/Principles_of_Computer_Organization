@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.gen/sources_1/ip/DATA_MEM/sim/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INST_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/mux1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/npc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/pc_plus4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_PLUS4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_FILE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/slu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab5/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB

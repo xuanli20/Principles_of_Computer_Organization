@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/CPU.v,1713353150,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/alu.v,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/include/config.v,CPU,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/alu.v,1711874025,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/branch.v,,ALU,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/branch.v,1713085237,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/decoder.v,,BRANCH,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/decoder.v,1713792331,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/mux1.v,,DECODER,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/include/config.v,1713142957,verilog,,,,,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/mux1.v,1712244812,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/mux2.v,,MUX1,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/mux2.v,1713084374,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/npc.v,,MUX2,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/npc.v,1713165131,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/pc.v,,NPC,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/pc.v,1712307453,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/pc_plus4.v,,PC,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/pc_plus4.v,1712321824,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/reg.v,,PC_PLUS4,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/reg.v,1712311572,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/slu.v,,REG_FILE,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/slu.v,1713166102,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/tb.v,,SLU,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/project_1/project_1.gen/sources_1/ip/DATA_MEM/sim/DATA_MEM.v,1713794090,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/project_1/project_1.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v,,DATA_MEM,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/project_1/project_1.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v,1713794444,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab4/_/vsrc/CPU/CPU.v,,INST_MEM,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab4/tb.v,1713160646,verilog,,,,TB,,,,,,,,

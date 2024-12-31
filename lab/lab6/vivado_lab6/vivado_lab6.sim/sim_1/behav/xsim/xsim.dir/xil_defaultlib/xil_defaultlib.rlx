@@ -1,0 +1,26 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v,1713775301,verilog,,,,TB,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vivado_lab6/vivado_lab6.gen/sources_1/ip/DATA_MEM/sim/DATA_MEM.v,1714987298,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vivado_lab6/vivado_lab6.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v,,DATA_MEM,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vivado_lab6/vivado_lab6.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v,1715423491,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v,,INST_MEM,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vivado_lab6/vivado_lab6.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v,1715171507,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/EX_MEM.v,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/include/config.v,CPU,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/EX_MEM.v,1713959825,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/ID_EX.v,,EX_MEM,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/ID_EX.v,1713959826,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/IF_ID.v,,ID_EX,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/IF_ID.v,1713959826,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/MEM_WB.v,,IF_ID,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/MEM_WB.v,1713959832,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/alu.v,,MEM_WB,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/alu.v,1711874025,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/branch.v,,ALU,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/branch.v,1713085237,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/decoder.v,,BRANCH,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/decoder.v,1713138047,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/forwarding.v,,DECODER,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/forwarding.v,1715171281,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/mux1.v,,FORWARDING,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/include/config.v,1713772224,verilog,,,,,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/mux1.v,1712244812,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/mux2.v,,MUX1,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/mux2.v,1713084374,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/npc.v,,MUX2,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/npc.v,1714995144,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/pc.v,,NPC,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/pc.v,1714994569,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/pc_plus4.v,,PC,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/pc_plus4.v,1712321824,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/reg.v,,PC_PLUS4,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/reg.v,1714378092,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/seg_ctrl.v,,REG_FILE,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/seg_ctrl.v,1715005627,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/slu.v,,SEG_CTRL,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/slu.v,1713166102,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v,,SLU,,,,,,,,

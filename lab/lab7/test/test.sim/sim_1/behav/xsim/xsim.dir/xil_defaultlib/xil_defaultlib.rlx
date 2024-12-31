@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/bram.v,1709293555,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/mem.v,,bram,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/cache_tb copy.v,1715824379,verilog,,,,cache_tb_s,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/mem.v,1713366437,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/mem_bram.v,,mem,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/mem_bram.v,1713366437,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/simple_cache.v,,mem_bram,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/simple_cache.v,1715783844,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab7/src/cache_tb copy.v,,cache_s,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab7/test/test.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,

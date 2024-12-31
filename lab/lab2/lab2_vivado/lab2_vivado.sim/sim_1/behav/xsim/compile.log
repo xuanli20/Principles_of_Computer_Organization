@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/lab2_vivado/lab2_vivado.gen/sources_1/ip/dist_mem_gen_0_2/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_FILE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/reg_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab2/ip_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IP_tb

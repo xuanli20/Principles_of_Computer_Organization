@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab3_vivado.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v" \
+"../../../../../vsrc/CPU/CPU.v" \
+"../../../../../vsrc/CPU/alu.v" \
+"../../../../../vsrc/CPU/decoder.v" \
+"../../../../../vsrc/CPU/mux.v" \
+"../../../../../vsrc/CPU/pc.v" \
+"../../../../../vsrc/CPU/pc_plus4.v" \
+"../../../../../vsrc/CPU/reg.v" \
+"../../../../../tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

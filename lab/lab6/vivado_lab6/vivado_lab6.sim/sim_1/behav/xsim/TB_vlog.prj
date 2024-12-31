@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vivado_lab6.gen/sources_1/ip/DATA_MEM/sim/DATA_MEM.v" \
+"../../../../vivado_lab6.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v" \
+"../../../../../vsrc/CPU/CPU.v" \
+"../../../../../vsrc/CPU/EX_MEM.v" \
+"../../../../../vsrc/CPU/ID_EX.v" \
+"../../../../../vsrc/CPU/IF_ID.v" \
+"../../../../../vsrc/CPU/MEM_WB.v" \
+"../../../../../vsrc/CPU/alu.v" \
+"../../../../../vsrc/CPU/branch.v" \
+"../../../../../vsrc/CPU/decoder.v" \
+"../../../../../vsrc/CPU/forwarding.v" \
+"../../../../../vsrc/CPU/mux1.v" \
+"../../../../../vsrc/CPU/mux2.v" \
+"../../../../../vsrc/CPU/npc.v" \
+"../../../../../vsrc/CPU/pc.v" \
+"../../../../../vsrc/CPU/pc_plus4.v" \
+"../../../../../vsrc/CPU/reg.v" \
+"../../../../../vsrc/CPU/seg_ctrl.v" \
+"../../../../../vsrc/CPU/slu.v" \
+"../../../../../tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.gen/sources_1/ip/DATA_MEM/sim/DATA_MEM.v" \
+"../../../../project_1.gen/sources_1/ip/INST_MEM/sim/INST_MEM.v" \
+"../../../../../_/vsrc/CPU/CPU.v" \
+"../../../../../_/vsrc/CPU/alu.v" \
+"../../../../../_/vsrc/CPU/branch.v" \
+"../../../../../_/vsrc/CPU/decoder.v" \
+"../../../../../_/vsrc/CPU/mux1.v" \
+"../../../../../_/vsrc/CPU/mux2.v" \
+"../../../../../_/vsrc/CPU/npc.v" \
+"../../../../../_/vsrc/CPU/pc.v" \
+"../../../../../_/vsrc/CPU/pc_plus4.v" \
+"../../../../../_/vsrc/CPU/reg.v" \
+"../../../../../_/vsrc/CPU/slu.v" \
+"../../../../../tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

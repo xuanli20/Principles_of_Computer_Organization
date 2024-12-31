@@ -1,0 +1,39 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L dist_mem_gen_v8_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'debug_reg_ra' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v:26]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_mem' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:160]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_wb' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:161]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_ex' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:189]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'alu_op_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:230]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dmem_access_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:231]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'rf_ra0_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:233]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'rf_ra1_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:234]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:235]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rf_we_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:236]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'rf_wd_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:237]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'alu_src0_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:238]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'alu_src1_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:239]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'br_type_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:240]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dmem_we_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:241]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'npc_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:268]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:291]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:305]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:334]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_out' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:346]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'npc_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:367]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:439]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_out' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:451]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:518]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_out' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:530]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v:47]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'we' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [/home/kuro/Principles_of_Computer_Organization/lab/lab6/tb.v:54]
+WARNING: [VRFC 10-5021] port 'rf_wd_in' is not connected on this instance [/home/kuro/Principles_of_Computer_Organization/lab/lab6/vsrc/CPU/CPU.v:215]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

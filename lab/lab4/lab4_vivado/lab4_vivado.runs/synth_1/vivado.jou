@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr 15 14:51:34 2024
+# Process ID: 93807
+# Current directory: /home/kuro/Principles_of_Computer_Organization/lab/lab4/lab4_vivado/lab4_vivado.runs/synth_1
+# Command line: vivado -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: /home/kuro/Principles_of_Computer_Organization/lab/lab4/lab4_vivado/lab4_vivado.runs/synth_1/TOP.vds
+# Journal file: /home/kuro/Principles_of_Computer_Organization/lab/lab4/lab4_vivado/lab4_vivado.runs/synth_1/vivado.jou
+# Running On: kuro-vlrwx9, OS: Linux, CPU Frequency: 3746.177 MHz, CPU Physical cores: 4, Host memory: 8072 MB
+#-----------------------------------------------------------
+source TOP.tcl -notrace

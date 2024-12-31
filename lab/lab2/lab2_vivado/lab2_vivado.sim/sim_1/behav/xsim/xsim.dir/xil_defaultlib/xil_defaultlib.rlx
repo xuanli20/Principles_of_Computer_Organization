@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/alu.v,1711874025,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/reg.v,,ALU,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/alu_tb.v,1711789570,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/reg_tb.v,,alu_testbench,,,,,,,,
+,,,,,,IP_tb,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/lab2_vivado/lab2_vivado.gen/sources_1/ip/dist_mem_gen_0_2/sim/dist_mem_gen_0.v,1711938500,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/alu.v,,dist_mem_gen_0,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/lab2_vivado/lab2_vivado.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/reg.v,1712145123,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/segment.v,,REG_FILE,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/reg_tb.v,1711940724,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/ip_tb.v,,RegFile_tb,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/segment.v,1711791206,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/top.v,,Segment,,,,,,,,
+/home/kuro/Principles_of_Computer_Organization/lab/lab2/top.v,1711929325,verilog,,/home/kuro/Principles_of_Computer_Organization/lab/lab2/alu_tb.v,,TOP,,,,,,,,

@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper]{ctexart}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{natbib}
+\usepackage{listings} % 引入listings宏包用于插入代码
+\usepackage{xcolor} % 引入xcolor宏包以支持更多的颜色设置
+
+% 设置Verilog代码样式
+\lstdefinestyle{verilog}{
+    language=Verilog, % 设置语言为Verilog
+    basicstyle=\small\ttfamily, % 设置基本字体样式
+    keywordstyle=\color{blue}, % 关键字颜色设置
+    commentstyle=\color{gray}\ttfamily, % 注释颜色和样式设置
+    stringstyle=\color{red!60!black},
+    numbers=left, % 行号在左边显示
+    numberstyle=\tiny,
+    frame=single, % 添加单线框
+    rulecolor=\color{black!30}, % 边框颜色
+    breaklines=true, % 允许自动换行
+}
+
+\title{Homework3}
+\author{张子康 \ PB22020660}
+\date{2024年04月15日}
+
+\begin{document}
+\maketitle
+\newpage
+\section{}
+\subsection{}
+单精度浮点数：符号位：1位,
+阶码：8位,
+尾数：22位。\par
+双精度浮点数：
+符号位：1位,
+阶码：11位,
+尾数：51位。
+\subsection{}
+单精度浮点数：
+0.2：cdcc4c3e，
+0.7：3333333f，
+0.9：6666663f，0.2 + 0.7 的结果：6666663f。\par
+双精度浮点数：0.2：9a9999999999c93f，
+0.7：666666666666e63f，
+0.9：cdccccccccccec3f，
+0.2 + 0.7 的结果：ccccccccccccec3f。\par
+在计算机中小数无法精确表示，0.2，0.7和0.9
+在单精度下恰好0.2+0.7=0.9，而在双精度下不满足。
+
+\section{}
+\subsection{}
+\subsubsection{}
+\begin{enumerate}
+    \item PC元件：给出指令所在的地址；
+    \item 指令存储器：根据PC的值取出指令；
+    \item 控制器：生成控制信号，包括ALU的opcode，寄存器写使能信号，控制输入ALU单元的数据，控制写回寄存器的数据来源；
+    \item 寄存器：根据给出的地址取出操作数，向制定的地址写入结果；
+    \item MUX：控制输入ALU单元的数据时来自寄存器还是立即数，控制写回寄存器的数据来源，控制下一个PC的来源；
+    \item ALU：进行加法运算并输出结果；
+    \item ALU控制器：产生ALU的opcode；
+    \item ImmGen：根据指令对立即数做符号扩展，产生操作数。
+\end{enumerate}
+\subsubsection{}
+\begin{enumerate}
+    \item PC元件：给出指令所在的地址；
+    \item 指令存储器：根据PC的值取出指令；
+    \item 控制器：生成控制信号，包括ALU的opcode，寄存器写使能信号，控制输入ALU单元的数据，控制写回寄存器的数据来源；
+    \item 寄存器：根据给出的地址取出操作数，向制定的地址写入结果；
+    \item MUX：控制输入ALU单元的数据时来自寄存器还是立即数，控制写回寄存器的数据来源；
+    \item ALU：进行比较运算并输出结果；
+    \item ImmGen：根据指令对立即数做符号扩展，产生操作数。
+    \item Add：计算需要跳转到的pc；
+    \item MUX：控制输入ALU单元的数据时来自寄存器还是立即数，控制写回寄存器的数据来源，控制下一个PC的来源；
+\end{enumerate}
+\subsection{}
+\subsubsection{}
+pc+4无法写回寄存器
+\subsubsection{}
+将pc+4的结果连接到控制写回到寄存器数据的MUX上，同时将其改为4选1的数据选择器。
+\subsubsection{}
+没有改变（应该吧）
+\section{}
+\subsection{}
+\begin{enumerate}
+    \item (假设是A-B)，对B取反与A相加，再将结果+1；
+    \item 设计算结果为C，需要将A右移B位。先计算'd32-B的结果存储在B中(减法计算见上)，C左移一位，然后加上A+32'h80000000的进位，将A左移一位，同时B-1。重复上述运算直到B==0。
+\end{enumerate}
+\subsection{}
+设该操作数为src，则操作为src+0
+\section{}
+\subsection{}
+Loongarch32中opcode和function部分是连
+在一起的且opcode不是定长（相当于每个opcode对应一个运算），但是在RISCV中
+是分开的且opcode定长。\par
+在译码器设计时，Loongarch32的每个opcode对应一种运算，在RISCV中除了
+要处理opcode，还要根据func段来判断具体运算。
+\subsection{}
+RISC-V中的rs1，rs2，rd位置固定，可以直接读取，译码和寄存器堆读取不存在依赖关系。但是
+在Loongarch32中对于每条指令需要具体判断，译码和寄存器堆读取存在依赖关系，可能会导致延迟增加。
+\end{document}

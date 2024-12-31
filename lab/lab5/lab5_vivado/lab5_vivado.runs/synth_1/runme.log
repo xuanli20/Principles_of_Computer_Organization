@@ -1,0 +1,642 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1321.516 ; gain = 0.023 ; free physical = 765 ; free virtual = 11197
+Command: read_checkpoint -auto_incremental -incremental /home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.srcs/utils_1/imports/synth_1/CPU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.srcs/utils_1/imports/synth_1/CPU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46046
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2042.238 ; gain = 404.715 ; free physical = 387 ; free virtual = 10436
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'dmem_wd_in', assumed default net type 'wire' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:143]
+INFO: [Synth 8-6157] synthesizing module 'TOP' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:111430]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 64 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:111430]
+INFO: [Synth 8-6157] synthesizing module 'PDU' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/PDU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/PDU.v:670]
+INFO: [Synth 8-6157] synthesizing module 'PDU_DECODE' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/PDU_decode.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/PDU_decode.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'PDU_DECODE' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/PDU_decode.v:34]
+INFO: [Synth 8-6157] synthesizing module 'HEX2UART' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/HEX2UART.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'HEX2UART' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/HEX2UART.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/PDU.v:745]
+INFO: [Synth 8-6157] synthesizing module 'BP_LIST_REG' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/BP_LIST_REG.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BP_LIST_REG' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/BP_LIST_REG.v:1]
+INFO: [Synth 8-6157] synthesizing module 'INFO_SENDER' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/INFO_SENDER.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/INFO_SENDER.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/INFO_SENDER.v:194]
+INFO: [Synth 8-6157] synthesizing module 'Hex2ASC' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/HEX2ASCII.v:1]
+	Parameter HEX_NUM bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Hex2ASC' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/HEX2ASCII.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'INFO_SENDER' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/RTL/INFO_SENDER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UART/UART_TX.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UART/UART_TX.v:8]
+INFO: [Synth 8-6157] synthesizing module 'QUEUE' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/QUEUE.v:1]
+	Parameter DEPTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'QUEUE' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/QUEUE.v:1]
+INFO: [Synth 8-6157] synthesizing module 'POSEDGE_GEN' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/POSEDGE_GEN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'POSEDGE_GEN' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/POSEDGE_GEN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UART/UART_RX.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UART/UART_RX.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'PDU' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/PDU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC_PLUS4' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/pc_plus4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC_PLUS4' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/pc_plus4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/pc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/IF_ID.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/IF_ID.v:1]
+WARNING: [Synth 8-7071] port 'rf_wd_in' of module 'IF_ID' is unconnected for instance 'if_id' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:166]
+WARNING: [Synth 8-7071] port 'rf_wd_out' of module 'IF_ID' is unconnected for instance 'if_id' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:166]
+WARNING: [Synth 8-7023] instance 'if_id' of module 'IF_ID' has 59 connections declared, but only 57 given [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:166]
+INFO: [Synth 8-6157] synthesizing module 'DECODER' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/decoder.v:35]
+INFO: [Synth 8-226] default block is never used [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/decoder.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'DECODER' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/decoder.v:35]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa' does not match port width (5) of module 'DECODER' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:242]
+INFO: [Synth 8-6157] synthesizing module 'REG_FILE' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'REG_FILE' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/reg.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa' does not match port width (5) of module 'REG_FILE' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:256]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/ID_EX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/ID_EX.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa_in' does not match port width (5) of module 'ID_EX' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:285]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa_out' does not match port width (5) of module 'ID_EX' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:297]
+INFO: [Synth 8-6157] synthesizing module 'MUX1' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/mux1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX1' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/mux1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/alu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/alu.v:13]
+INFO: [Synth 8-6157] synthesizing module 'BRANCH' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/branch.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'BRANCH' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/branch.v:10]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/npc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/npc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/EX_MEM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/EX_MEM.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa_in' does not match port width (5) of module 'EX_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:390]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa_out' does not match port width (5) of module 'EX_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:402]
+INFO: [Synth 8-6157] synthesizing module 'SLU' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/slu.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SLU' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/slu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/MEM_WB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/MEM_WB.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa_in' does not match port width (5) of module 'MEM_WB' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:469]
+WARNING: [Synth 8-689] width (6) of port connection 'rf_wa_out' does not match port width (5) of module 'MEM_WB' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:481]
+INFO: [Synth 8-6157] synthesizing module 'MUX2' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MMIO' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/MEM/MMIO.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/MEM/MMIO.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'MMIO' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/MEM/MMIO.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_BRIDGE' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/MEM/MEM_BRIDGE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_BRIDGE' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/MEM/MEM_BRIDGE.v:1]
+INFO: [Synth 8-6157] synthesizing module 'INST_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.runs/synth_1/.Xil/Vivado-45957-kuro-vlrwx9/realtime/INST_MEM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'INST_MEM' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.runs/synth_1/.Xil/Vivado-45957-kuro-vlrwx9/realtime/INST_MEM_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (9) of module 'INST_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/TOP.v:267]
+INFO: [Synth 8-6157] synthesizing module 'DATA_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.runs/synth_1/.Xil/Vivado-45957-kuro-vlrwx9/realtime/DATA_MEM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DATA_MEM' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.runs/synth_1/.Xil/Vivado-45957-kuro-vlrwx9/realtime/DATA_MEM_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (9) of module 'DATA_MEM' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/TOP.v:275]
+INFO: [Synth 8-6157] synthesizing module 'Segment' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/Segment.v:1]
+INFO: [Synth 8-226] default block is never used [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/Segment.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'Segment' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/PDU/UTILS/Segment.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (0#1) [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/TOP.v:1]
+WARNING: [Synth 8-3848] Net rf_wd_out in module/entity IF_ID does not have driver. [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/IF_ID.v:63]
+WARNING: [Synth 8-7129] Port addr[31] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[7] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[6] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[5] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[4] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[3] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[2] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[31] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[30] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[29] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[28] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[27] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[26] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[25] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[24] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[23] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[22] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[21] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[20] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[19] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[18] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[17] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[16] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[15] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[14] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[13] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[12] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[11] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[10] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[9] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[8] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[7] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[6] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[5] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[1] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_out[0] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[31] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[30] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[29] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[28] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[27] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[26] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[25] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[24] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[23] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[22] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[21] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[20] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[19] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[18] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[17] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[16] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[15] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[14] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[13] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[12] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[11] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[10] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[9] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[8] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[7] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[6] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[5] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[1] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rf_wd_in[0] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mmio_is_halt[0] in module PDU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pdu_mmio_data_accept[0] in module PDU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2150.207 ; gain = 512.684 ; free physical = 245 ; free virtual = 10294
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2168.020 ; gain = 530.496 ; free physical = 231 ; free virtual = 10278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2168.020 ; gain = 530.496 ; free physical = 231 ; free virtual = 10278
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2173.957 ; gain = 0.000 ; free physical = 223 ; free virtual = 10273
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Synth 37-20] Could not find a clock associated with pin WE1 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin RA2 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin RA3 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin RA4 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin RO2 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin RO3 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin RO4 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin WA1 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+WARNING: [Synth 37-20] Could not find a clock associated with pin WD1 for RAM cell RTL_RAM0. Constraints related to this pin or cell won't work with elaborated design.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.gen/sources_1/ip/INST_MEM/INST_MEM/INST_MEM_in_context.xdc] for cell 'instruction_memory'
+Finished Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.gen/sources_1/ip/INST_MEM/INST_MEM/INST_MEM_in_context.xdc] for cell 'instruction_memory'
+Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.gen/sources_1/ip/DATA_MEM/DATA_MEM/DATA_MEM_in_context.xdc] for cell 'data_memory'
+Finished Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.gen/sources_1/ip/DATA_MEM/DATA_MEM/DATA_MEM_in_context.xdc] for cell 'data_memory'
+Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab5/constraints_0415.xdc]
+Finished Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab5/constraints_0415.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kuro/Principles_of_Computer_Organization/lab/lab5/constraints_0415.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2308.770 ; gain = 0.000 ; free physical = 167 ; free virtual = 10237
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2308.805 ; gain = 0.000 ; free physical = 166 ; free virtual = 10239
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 146 ; free virtual = 10224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 146 ; free virtual = 10224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for instruction_memory. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for data_memory. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 146 ; free virtual = 10224
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'print_cs_reg' in module 'INFO_SENDER'
+INFO: [Synth 8-802] inferred FSM for state register 'status_cur_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'status_cur_reg' in module 'UART_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'mmio_cs_reg' in module 'MMIO'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    WAIT |                             0000 | 00000000000000000000000000000000
+        PRINT_START_LOGO |                             0001 | 00000000000000000000000000000101
+         PRINT_LINE_HEAD |                             0010 | 00000000000000000000000000000110
+             PRINT_ENTER |                             0011 | 00000000000000000000000000000111
+             PRINT_BLANK |                             0100 | 00000000000000000000000000001000
+      PRINT_DOUBLE_ENTER |                             0101 | 00000000000000000000000000001001
+          PRINT_BP_VALID |                             0110 | 00000000000000000000000000001010
+        PRINT_BP_INVALID |                             0111 | 00000000000000000000000000001101
+            PRINT_BP_SET |                             1000 | 00000000000000000000000000001011
+          PRINT_BP_CLEAR |                             1001 | 00000000000000000000000000001100
+            PRINT_CUR_PC |                             1010 | 00000000000000000000000000001110
+          PRINT_CPU_HEAD |                             1011 | 00000000000000000000000000010000
+     PRINT_CMD_NOT_FOUND |                             1100 | 00000000000000000000000000001111
+               SEND_DATA |                             1101 | 00000000000000000000000000000010
+               SEND_WAIT |                             1110 | 00000000000000000000000000000011
+              PRINT_DONE |                             1111 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'print_cs_reg' using encoding 'sequential' in module 'INFO_SENDER'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              111
+                 iSTATE0 |                              001 |                              000
+                 iSTATE1 |                              010 |                              001
+                 iSTATE2 |                              011 |                              010
+                 iSTATE3 |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_cur_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                            00001 |                              111
+                 iSTATE0 |                            00010 |                              000
+                 iSTATE1 |                            00100 |                              001
+                 iSTATE2 |                            01000 |                              010
+                 iSTATE3 |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_cur_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    WAIT |                              000 |                            00000
+          CPU_UART_VALID |                              001 |                            00001
+      CPU_UART_SEND_DATA |                              010 |                            00010
+    CPU_UART_CLEAR_VALID |                              011 |                            00011
+          PDU_UART_READY |                              100 |                            00101
+           PDU_UART_WAIT |                              101 |                            00110
+      PDU_UART_DATA_READ |                              110 |                            00111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mmio_cs_reg' using encoding 'sequential' in module 'MMIO'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 139 ; free virtual = 10217
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 4     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 81    
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 47    
+	                5 Bit    Registers := 17    
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 38    
++---Multipliers : 
+	               4x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit	(1024 X 8 bit)          RAMs := 2     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   6 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 30    
+	   4 Input   32 Bit        Muxes := 6     
+	   6 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 2     
+	  10 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 22    
+	  20 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 29    
+	  14 Input    8 Bit        Muxes := 32    
+	   5 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	  53 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 16    
+	   5 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   3 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	  28 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	  11 Input    5 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 4     
+	   9 Input    5 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	  18 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 12    
+	   6 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 3     
+	   7 Input    3 Bit        Muxes := 2     
+	  10 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 50    
+	  12 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 11    
+	   5 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port addr[31] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module SLU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module SLU is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (mmio/FSM_sequential_mmio_cs_reg[2]) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 220 ; free virtual = 10206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+----------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object     | Inference | Size (Depth x Width) | Primitives   | 
++-------------+----------------+-----------+----------------------+--------------+
+|QUEUE:       | fifo_queue_reg | Implied   | 1 K x 8              | RAM64M x 48  | 
+|QUEUE:       | fifo_queue_reg | Implied   | 1 K x 8              | RAM64M x 48  | 
+|cpu/reg_file | reg_file_reg   | Implied   | 32 x 32              | RAM32M x 18  | 
++-------------+----------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 156 ; free virtual = 10160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 234 ; free virtual = 10131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+----------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object     | Inference | Size (Depth x Width) | Primitives   | 
++-------------+----------------+-----------+----------------------+--------------+
+|QUEUE:       | fifo_queue_reg | Implied   | 1 K x 8              | RAM64M x 48  | 
+|QUEUE:       | fifo_queue_reg | Implied   | 1 K x 8              | RAM64M x 48  | 
+|cpu/reg_file | reg_file_reg   | Implied   | 32 x 32              | RAM32M x 18  | 
++-------------+----------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (mmio/FSM_sequential_mmio_cs_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (mmio/FSM_sequential_mmio_cs_reg[0]) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 203 ; free virtual = 10109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 301 ; free virtual = 10143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 301 ; free virtual = 10143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:38 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 316 ; free virtual = 10146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:38 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 314 ; free virtual = 10146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 326 ; free virtual = 10151
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 326 ; free virtual = 10150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |INST_MEM      |         1|
+|2     |DATA_MEM      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DATA_MEM   |     1|
+|2     |INST_MEM   |     1|
+|3     |BUFG       |     1|
+|4     |CARRY4     |   127|
+|5     |LUT1       |    69|
+|6     |LUT2       |   380|
+|7     |LUT3       |   328|
+|8     |LUT4       |   456|
+|9     |LUT5       |   446|
+|10    |LUT6       |  1265|
+|11    |MUXF7      |    35|
+|12    |MUXF8      |    13|
+|13    |PLLE2_BASE |     1|
+|14    |RAM32M     |    15|
+|15    |RAM32X1D   |     6|
+|16    |RAM64M     |    80|
+|17    |RAM64X1D   |    16|
+|18    |FDRE       |  1689|
+|19    |FDSE       |    16|
+|20    |IBUF       |     3|
+|21    |OBUF       |    16|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 326 ; free virtual = 10150
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 2308.805 ; gain = 530.496 ; free physical = 326 ; free virtual = 10150
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 2308.805 ; gain = 671.281 ; free physical = 326 ; free virtual = 10150
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2308.805 ; gain = 0.000 ; free physical = 626 ; free virtual = 10434
+INFO: [Netlist 29-17] Analyzing 293 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.770 ; gain = 0.000 ; free physical = 630 ; free virtual = 10462
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 118 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 80 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+Synth Design complete | Checksum: d054322c
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:44 . Memory (MB): peak = 2316.805 ; gain = 995.289 ; free physical = 609 ; free virtual = 10441
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1941.467; main = 1623.041; forked = 398.859
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3277.004; main = 2316.773; forked = 992.246
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2340.781 ; gain = 0.000 ; free physical = 607 ; free virtual = 10440
+INFO: [Common 17-1381] The checkpoint '/home/kuro/Principles_of_Computer_Organization/lab/lab5/lab5_vivado/lab5_vivado.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 19:57:08 2024...

@@ -1,0 +1,60 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L dist_mem_gen_v8_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'debug_reg_ra' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/tb.v:26]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'alu_op_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:181]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dmem_access_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:182]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'rf_ra0_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:184]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'rf_ra1_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:185]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rf_we_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:187]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'rf_wd_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:188]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'alu_src0_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:189]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'alu_src1_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:190]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'br_type_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:191]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dmem_we_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:192]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'npc_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:219]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:242]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:256]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:285]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_out' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:297]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'npc_sel_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:318]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:390]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_out' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:402]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_in' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:469]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'rf_wa_out' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:481]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/tb.v:47]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/tb.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'we' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/tb.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [/home/kuro/Principles_of_Computer_Organization/lab/lab5/tb.v:54]
+WARNING: [VRFC 10-5021] port 'rf_wd_in' is not connected on this instance [/home/kuro/Principles_of_Computer_Organization/lab/lab5/vsrc/CPU/CPU.v:166]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_PLUS4
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.REG_FILE
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.MUX1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.SLU
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.MUX2
+Compiling module xil_defaultlib.CPU
+Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="a...
+Compiling module xil_defaultlib.INST_MEM
+Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="a...
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_behav

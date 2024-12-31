@@ -1,0 +1,59 @@
+
+*** Running vivado
+    with args -log TOP.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TOP.tcl -notrace
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1319.965 ; gain = 0.023 ; free physical = 1351 ; free virtual = 12482
+Command: link_design -top TOP -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint '/home/kuro/Principles_of_Computer_Organization/lab/lab6/vivado_lab6/vivado_lab6.gen/sources_1/ip/DATA_MEM/DATA_MEM.dcp' for cell 'data_memory'
+INFO: [Project 1-454] Reading design checkpoint '/home/kuro/Principles_of_Computer_Organization/lab/lab6/vivado_lab6/vivado_lab6.gen/sources_1/ip/INST_MEM/INST_MEM.dcp' for cell 'instruction_memory'
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1670.816 ; gain = 0.000 ; free physical = 970 ; free virtual = 12107
+INFO: [Netlist 29-17] Analyzing 421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab6/constraints_0415.xdc]
+Finished Parsing XDC File [/home/kuro/Principles_of_Computer_Organization/lab/lab6/constraints_0415.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1884.469 ; gain = 0.000 ; free physical = 852 ; free virtual = 11999
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 245 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 80 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1884.504 ; gain = 564.539 ; free physical = 851 ; free virtual = 11998
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net pdu/info_sender/commit has multiple drivers: pc_add4_reg[31]_i_3/O, and pdu/info_sender/pc_add4[31]_i_2__0/O.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.93 . Memory (MB): peak = 1971.281 ; gain = 86.777 ; free physical = 837 ; free virtual = 11972
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  1 10:35:15 2024...

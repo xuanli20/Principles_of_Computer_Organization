@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab2_vivado.gen/sources_1/ip/dist_mem_gen_0_2/sim/dist_mem_gen_0.v" \
+"../../../../../alu.v" \
+"../../../../../reg.v" \
+"../../../../../segment.v" \
+"../../../../../top.v" \
+"../../../../../alu_tb.v" \
+"../../../../../reg_tb.v" \
+"../../../../../ip_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

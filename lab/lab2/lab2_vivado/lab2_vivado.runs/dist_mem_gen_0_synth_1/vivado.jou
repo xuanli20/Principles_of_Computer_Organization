@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  1 10:28:23 2024
+# Process ID: 164603
+# Current directory: /home/kuro/Principles_of_Computer_Organization/lab/lab2/lab2_vivado/lab2_vivado.runs/dist_mem_gen_0_synth_1
+# Command line: vivado -log dist_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_0.tcl
+# Log file: /home/kuro/Principles_of_Computer_Organization/lab/lab2/lab2_vivado/lab2_vivado.runs/dist_mem_gen_0_synth_1/dist_mem_gen_0.vds
+# Journal file: /home/kuro/Principles_of_Computer_Organization/lab/lab2/lab2_vivado/lab2_vivado.runs/dist_mem_gen_0_synth_1/vivado.jou
+# Running On: kuro-vlrwx9, OS: Linux, CPU Frequency: 3742.468 MHz, CPU Physical cores: 4, Host memory: 8072 MB
+#-----------------------------------------------------------
+source dist_mem_gen_0.tcl -notrace

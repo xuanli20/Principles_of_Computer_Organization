@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kuro/Principles_of_Computer_Organization/lab/lab7/cache_N_RANDOM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_random
+ERROR: [VRFC 10-2989] 'aa' is not declared [/home/kuro/Principles_of_Computer_Organization/lab/lab7/cache_N_RANDOM.v:254]
+ERROR: [VRFC 10-8530] module 'cache_random' is ignored due to previous errors [/home/kuro/Principles_of_Computer_Organization/lab/lab7/cache_N_RANDOM.v:7]

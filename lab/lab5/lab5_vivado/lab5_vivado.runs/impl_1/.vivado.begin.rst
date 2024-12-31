@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="kuro" Host="kuro-vlrwx9" Pid="5295" HostCore="8" HostMemory="7883296">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="kuro" Host="kuro-vlrwx9" Pid="46996" HostCore="8" HostMemory="7883296">
+    </Process>
+</ProcessHandle>
